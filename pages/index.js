@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import  Layout from '../src/components/Layout';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ImageWrapper = styled.div`
 width: 100%;
@@ -60,7 +61,7 @@ export default function Home() {
           height="700"
         />
       <WelcomeText>
-        <p>Welcome from the Gershman Family</p>
+        <Link href="/family-statement" passHref><p>WELCOME: to read a statement by the Gershman Family, click here...</p></Link>
       </WelcomeText>
         <Image
           src="/img/norman_homepage.png"
